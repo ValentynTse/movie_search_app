@@ -40,7 +40,7 @@ const fetchData = url => fetch(url)
    })
 
 const getMovies = searchValue => from(
-   fetchData(`http://www.omdbapi.com/?apikey=18b8609f&S=${searchValue}`)).pipe(
+   fetchData(`https://www.omdbapi.com/?apikey=18b8609f&S=${searchValue}`)).pipe(
       catchError(err => {
          console.error('Error downloading movies:', err.message)
          return of([])
