@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="zxx"><!--встановлює багатомовність для сторінки-->
+
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Movie search app</title>
+   <link rel="stylesheet" href="./css/style.css">
+</head>
+
+<body>
+   <div class="container">
+      <h1>Movie search app</h1>
+      <div class="search">
+         <div class="search__group search__group--input">
+            <label class="search__label--input" for="search">Movies search</label>
+            <input class="search__input" id="search" type="search" placeholder="Input movies name">
+         </div>
+
+         <div class="search__group search__group--checkbox">
+            <input class="search__input--checkbox" id="checkbox" type="checkbox">
+            <label class="search__label--checkbox" for="checkbox">Add movies to list</label>
+         </div>
+
+      </div>
+      <div class="movies" id="movies-list">
+         <!-- <div class="movies__item movie">
+            <img class="movie__image" src="https://loremflickr.com/640/500" alt="Film title" title="Film title">
+         </div> -->         
+      </div>
+
+   </div>
+   <script src="https://cdnjs.cloudflare.com/ajax/libs/rxjs/7.8.1/rxjs.umd.min.js"></script>
+   <script src="./js/main.js" defer></script><!-- скрипт повинен дочекатися завантаження бібліотеки -->
+</body>
+
+</html>
